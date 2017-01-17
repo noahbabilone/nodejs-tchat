@@ -1,0 +1,15 @@
+extends layout
+
+block content
+    .container
+    .card.card-container
+        form.form-signin(action='/auth/register', method='POST')
+            span#reauth-username.reauth-username
+            input#inputUsername.form-control(type='text', placeholder='Username', name='username', required='', autofocus='')
+            input#inputPassword.form-control(type='password', placeholder='Password', name='password', required='')
+            //- input#inputPassword.form-control(type='password', placeholder='Confirm Password', required='')
+            button.btn.btn-lg.btn-success.btn-block.btn-signin(type='submit') Register
+            // /form
+    // /card-container
+    // /container
+

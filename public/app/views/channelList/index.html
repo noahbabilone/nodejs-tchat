@@ -1,0 +1,22 @@
+<div class="row">
+    <div class="col-sm-6">
+        <h1>Channel List</h1>
+
+    </div>
+    <div class="col-sm-6" style="margin-top: 20px;">
+        <a class="btn btn-primary" data-bind="click: CreateChannel">
+            <i class="fa fa-plus"></i>
+            Create New Channel
+        </a>
+    </div>
+    <div class="col-sm-12">
+
+        <div class="list-group">
+            <!-- ko foreach: channels -->
+
+            <a class="list-group-item" data-bind="attr : { href : '#/channel/' + name }"><span data-bind="text: name">></span></a>
+            
+            <!-- /ko -->
+        </div>
+    </div>
+</div>

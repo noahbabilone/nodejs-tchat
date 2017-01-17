@@ -1,0 +1,29 @@
+<div class="row">
+    <!--<div class="col-sm-6">-->
+        <!--<h1><span data-bind="text: channel.name"></span></h1>-->
+        <!--<p><span data-bind="text: channel.topic"></span></p>-->
+    <!--</div>-->
+    <div class="12">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <!-- ko foreach: messages -->
+                <div class="well">
+                    <span data-bind="text: owner.username"></span> :
+                    <div data-bind="text: content"></div>
+                </div>
+                <!-- /ko -->
+            </div>
+            <div class="panel-footer">
+                <div class="message">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input data-bind="value : entry" class="form-control"/>
+                            <div class="btn btn-primary input-group-addon" data-bind="click: Post"><i
+                                    class="fa fa-send"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
