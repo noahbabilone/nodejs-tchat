@@ -6,7 +6,7 @@
 * npm install mongoose --save
 * npm install --save passport passport-local passport-local-mongoose
 
-* npm i socket.io
+* npm i --save socket.io
 
 * npm i --save mongooseJS
 * npm i --save Nodemon
