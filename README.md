@@ -21,8 +21,8 @@
 ##Système d'API
 
 ##Pour lancer le projet
-npm install 
-npm run start
+* npm install 
+* npm run start
 
 cd Sites/mongodb
 sudo bin/mongod
